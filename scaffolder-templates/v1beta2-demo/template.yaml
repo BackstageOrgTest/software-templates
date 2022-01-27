@@ -5,7 +5,7 @@ metadata:
   title: Test Action template
   description: scaffolder v1beta2 template demo publishing to github
 spec:
-  owner: backstage/techdocs-core
+  owner: user:Dricmartinez
   type: service
 
   parameters:
@@ -27,7 +27,7 @@ spec:
           description: Owner of the component
           ui:field: OwnerPicker
           ui:options:
-            allowedKinds: 
+            allowedKinds:
               - Group
         system:
           title: System
@@ -38,7 +38,7 @@ spec:
             allowedKinds:
               - System
             defaultKind: System
-            
+
     - title: Choose a location
       required:
         - repoUrl
@@ -64,7 +64,7 @@ spec:
         url: ./template
         values:
           name: '{{ parameters.name }}'
-          owner: '{{ parameters.owner }}'         
+          owner: '{{ parameters.owner }}'
           system: '{{ parameters.system }}'
           destination: '{{ parseRepoUrl parameters.repoUrl }}'
 

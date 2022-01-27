@@ -5,7 +5,7 @@ metadata:
   title: Rails template
   description: scaffolder Rails app
 spec:
-  owner: backstage/techdocs-core
+  owner: group:web-development-team
   type: service
 
   parameters:
@@ -27,7 +27,7 @@ spec:
           description: Owner of the component
           ui:field: OwnerPicker
           ui:options:
-            allowedKinds: 
+            allowedKinds:
               - Group
         system:
           title: System
@@ -38,7 +38,7 @@ spec:
             allowedKinds:
               - System
             defaultKind: System
-            
+
     - title: Choose a location
       required:
         - repoUrl
@@ -123,7 +123,7 @@ spec:
         url: ./template
         values:
           name: '{{ parameters.name }}'
-          owner: '{{ parameters.owner }}'         
+          owner: '{{ parameters.owner }}'
           system: '{{ parameters.system }}'
           railsArguments: '{{ json parameters.railsArguments }}'
 

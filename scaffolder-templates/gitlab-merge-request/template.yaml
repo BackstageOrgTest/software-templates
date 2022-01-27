@@ -5,7 +5,7 @@ metadata:
   title: GitLab Merge Request Action template
   description: scaffolder v1beta2 template demo publishing to MR on existing git repository
 spec:
-  owner: backstage/techdocs-core
+  owner: user:Dricmartinez
   type: service
 
   parameters:
@@ -74,6 +74,6 @@ spec:
         targetPath: '{{#if parameters.targetPath}}{{parameters.targetPath}}{{else}}.{{/if}}'
 
   output:
-    links: 
+    links:
       - url: '{{steps.publish.output.mergeRequestUrl}}'
         text: 'Go to Gitlab MR'
