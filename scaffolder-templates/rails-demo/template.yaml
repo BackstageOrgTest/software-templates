@@ -4,8 +4,7 @@ metadata:
   name: rails-demo
   title: Rails template
   description: scaffolder Rails app
-  tags:
-    - UnderConstruction
+  tags:  
     - Unstable   
 spec:
   owner: group:web-development-team
