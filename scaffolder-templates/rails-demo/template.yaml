@@ -5,7 +5,8 @@ metadata:
   title: Rails template
   description: scaffolder Rails app
   tags:  
-    - Unstable   
+    - Unstable 
+    - UnderConstruction
 spec:
   owner: group:web-development-team
   type: service
