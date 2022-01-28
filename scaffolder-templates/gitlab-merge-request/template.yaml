@@ -4,6 +4,9 @@ metadata:
   name: gitlab-merge-request
   title: GitLab Merge Request Action template
   description: scaffolder v1beta2 template demo publishing to MR on existing git repository
+  tags:  
+    - Unstable 
+    - UnderConstruction
 spec:
   owner: user:Dricmartinez
   type: service
